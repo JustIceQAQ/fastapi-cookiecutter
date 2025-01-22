@@ -1,2 +1,2 @@
-TITLE = '{{ cookiecutter.project_name }}'
-VERSION = '{{ cookiecutter.version }}'
+TITLE = "{{ cookiecutter.project_name }}"
+VERSION = "{{ cookiecutter.version }}"
