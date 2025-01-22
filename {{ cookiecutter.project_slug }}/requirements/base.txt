@@ -3,3 +3,4 @@ python-multipart # https://github.com/Kludex/python-multipart
 pydantic # https://github.com/pydantic/pydantic
 pydantic-settings # https://github.com/pydantic/pydantic-settings
 uvicorn[standard] # https://github.com/encode/uvicorn
+croniter # https://github.com/kiorky/croniter
