@@ -1,3 +1,5 @@
 fastapi
+python-multipart
 pydantic
 pydantic-settings
+uvicorn[standard]
