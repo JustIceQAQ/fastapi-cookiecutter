@@ -7,6 +7,7 @@ def app_factory(lifespan_) -> FastAPI:
     from configs.settings import get_settings
     from configs import TITLE, VERSION
     from fastapi.openapi.utils import get_openapi
+    from apps.routers import apis_router
 
     runtime_settings = get_settings()
     app_ = FastAPI(
@@ -21,6 +22,8 @@ def app_factory(lifespan_) -> FastAPI:
         },
         lifespan=lifespan_,
     )
+
+    app_.include_router(apis_router)
 
     def custom_openapi():  # pragma: no cover
         if app_.openapi_schema:
