@@ -5,7 +5,7 @@ from functools import lru_cache
 
 from pydantic_settings import BaseSettings
 from pydantic import Field
-from ..helpers.utils.datetime.helper import datetime_now
+from helpers.utils.datetime.helper import datetime_now
 
 
 class DeployStatus(str, Enum):
