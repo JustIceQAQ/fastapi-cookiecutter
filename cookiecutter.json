@@ -1,5 +1,6 @@
 {
   "project_name": "FastAPI Cookiecutter Simple",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+  "timezone": "UTC",
   "author": "Anonymous"
 }
