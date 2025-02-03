@@ -1,1 +1,7 @@
 -r base.txt
+pytest # https://github.com/pytest-dev/pytest/
+pytest-asyncio # https://github.com/pytest-dev/pytest-asyncio
+pytest-xdist # https://github.com/pytest-dev/pytest-xdist
+pytest-print # https://github.com/pytest-dev/pytest-print
+pytest-subtests # https://github.com/pytest-dev/pytest-subtests
+pytest-cov # https://github.com/pytest-dev/pytest-cov
