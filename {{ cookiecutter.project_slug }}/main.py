@@ -34,9 +34,6 @@ def app_factory(lifespan_) -> FastAPI:
             description=TITLE,
             routes=app_.routes,
         )
-        openapi_schema["info"]["x-logo"] = {
-            "url": "https://roboadvisor.com.tw/img/alpha-logo.5ecb9126.png"
-        }
         app_.openapi_schema = openapi_schema
 
         return app_.openapi_schema
