@@ -1,0 +1,25 @@
+[project]
+name = "{{ cookiecutter.project_slug }}"
+version = "{{ cookiecutter.version }}"
+description = "{{ cookiecutter.project_name }}"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]",
+    "python-multipart",
+    "pydantic",
+    "pydantic-settings",
+    "uvicorn[standard]",
+    "croniter"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov"
+]
+dev = [
+    "pre-commit",
+    "bump-my-version"
+]

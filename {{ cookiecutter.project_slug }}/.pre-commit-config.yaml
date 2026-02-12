@@ -1,7 +1,7 @@
 fail_fast: true
 default_stages: [ pre-commit ]
 default_language_version:
-  python: python3.11
+  python: python3.12
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
@@ -33,4 +33,4 @@ repos:
     rev: v1.3.3
     hooks:
       - id: python-safety-dependencies-check
-        files: requirements.txt
+        files: pyproject.toml
