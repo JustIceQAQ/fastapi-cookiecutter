@@ -1,4 +1,4 @@
-ARG PYTHON_VERSION=3.11.11-slim-bookworm
+ARG PYTHON_VERSION=3.12-slim-bookworm
 
 FROM python:${PYTHON_VERSION} AS python
 FROM python AS python-build-stage
