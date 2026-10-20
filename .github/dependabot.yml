@@ -6,6 +6,15 @@ updates:
       interval: "weekly"
       day: "monday"
     groups:
-      python-packages:
+      all-dependencies:
+        patterns:
+          - "*"
+  - package-ecosystem: "uv"
+    directory: "/{{ cookiecutter.project_slug }}"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    groups:
+      all-dependencies:
         patterns:
           - "*"
